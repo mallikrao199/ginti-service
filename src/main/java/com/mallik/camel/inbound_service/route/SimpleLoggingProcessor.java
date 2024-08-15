@@ -1,4 +1,4 @@
-package com.mallik.camel.ginti_service.route;
+package com.mallik.camel.inbound_service.route;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

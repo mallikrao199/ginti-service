@@ -1,21 +1,21 @@
-package com.mallik.camel.ginti_service.route;
+package com.mallik.camel.inbound_service.route;
 
 import java.time.LocalDateTime;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
+
 @Component
+@AllArgsConstructor
 public class MyFirstTimerRouter extends RouteBuilder {
 	
-	@Autowired 
-	private GetCurrentTimeBean getCurrentTimeBean;
+	private final GetCurrentTimeBean getCurrentTimeBean;
 	
-	@Autowired
-	private SimpleLoggingProcessingComponent loggingComponent;
+	private final SimpleLoggingProcessingComponent loggingComponent;
 
 	@Override
 	public void configure() throws Exception {

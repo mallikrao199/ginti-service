@@ -1,13 +1,13 @@
-package com.mallik.camel.ginti_service;
+package com.mallik.camel.inbound_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GintiServiceApplication {
+public class InboundServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GintiServiceApplication.class, args);
+		SpringApplication.run(InboundServiceApplication.class, args);
 	}
 
 }
